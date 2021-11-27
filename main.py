@@ -56,7 +56,7 @@ def main():
 
     """ Initializing"""
     radio1 = RadioGroup(labels=["a", "b", "c"], active=0)
-    radios = [radio1] + [RadioGroup(title="blabla") for _ in range(5)]
+    radios = [radio1] + [RadioGroup() for _ in range(5)]
 
     for radio in radios:
         radio.on_change("active", partial(update_poll, radio, radios, interactions))
