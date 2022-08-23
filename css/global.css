@@ -1,0 +1,97 @@
+.model-selector {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+/*form {
+ display: grid;
+
+}
+*/
+
+
+h3{
+    text-align:center;
+}
+
+h4{
+    text-align: center;
+}
+
+h5{
+    text-align: center;
+}
+
+label{
+    display:block;
+    text-align: center;
+}
+
+.inputcontainer{
+    text-align:center;
+    }
+.slidecontainer{
+    text-align:center;
+}
+
+.validatebutton{
+    text-align :center;
+    left: 50%;
+}
+
+.banner {
+    background-color : blue
+}
+
+.category1 {
+    background-color : red
+}
+
+.category2 {
+    background-color : green;
+}
+
+.poll2{
+      background-color : grey;
+      float: left;
+      width: 50%;
+      height: 100%;
+}
+
+.subcategory2 {
+    display: inline-block;}
+
+.category3 {
+    background-color : purple
+}
+
+
+
+#first-banner { grid-area: 1 / 1 / 2 / 13;}
+
+#goal { grid-area: 2 / 1 / 6 / 4; }
+#scale-of-interest { grid-area: 2 / 4 / 6 / 7; }
+#type-of-model { grid-area: 2 / 7 / 6 / 10; }
+#lab-technic { grid-area: 2 / 10 / 6 / 13; }
+
+#second-banner { grid-area: 6 / 1 / 7 / 13; }
+
+#homology { grid-area: 7 / 1 / 11 / 5; }
+#face-validity { grid-area: 7 / 5 / 11 / 9; }
+#mechanisms { grid-area: 7 / 9 / 11 / 13; }
+#predictive-validity { grid-area: 11 / 1 / 15 / 5; }
+#pathogenic-validity { grid-area: 11 / 5 / 15 / 9; }
+#other-category { grid-area: 11 / 9 / 15 / 13;}
+
+#third-banner{ grid-area: 15 / 1 / 16 / 13; }
+
+#reproducibility { grid-area: 16 / 1 / 20 / 3; }
+#fiability { grid-area: 16 / 3 / 20 / 5; }
+#control { grid-area: 16 / 5 / 20 / 7; }
+#randomization { grid-area: 16 / 7 / 20 / 9; }
+#convergent-validity { grid-area: 16 / 9 / 20 / 11; }
+#blind-experiments { grid-area: 16 / 11 / 20 / 13; }
+#action-button { grid-area: 20 / 1 / 21 / 13;}
