@@ -1,9 +1,6 @@
 .model-selector {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(20, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 /*form {
@@ -47,15 +44,17 @@ label{
 }
 
 .category1 {
-    background-color : red
+    flex-grow: 1;
+    /*background-color : red;*/
+    align-items: stretch;
 }
 
 .category2 {
-    background-color : green;
+    /*background-color : green;*/
 }
 
 .poll2{
-      background-color : grey;
+      /*background-color : grey;*/
       float: left;
       width: 50%;
       height: 100%;
@@ -65,12 +64,18 @@ label{
     display: inline-block;}
 
 .category3 {
-    background-color : purple
+    /*background-color : purple*/
 }
 
 
 
 #first-banner { grid-area: 1 / 1 / 2 / 13;}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 #goal { grid-area: 2 / 1 / 6 / 4; }
 #scale-of-interest { grid-area: 2 / 4 / 6 / 7; }
@@ -95,3 +100,6 @@ label{
 #convergent-validity { grid-area: 16 / 9 / 20 / 11; }
 #blind-experiments { grid-area: 16 / 11 / 20 / 13; }
 #action-button { grid-area: 20 / 1 / 21 / 13;}
+
+hr { flex-basis: 100%; height: 0; margin: 0; border: 0; }
+
