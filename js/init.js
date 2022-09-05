@@ -15,7 +15,7 @@ const category3 = document.getElementsByClassName("category3");
 const chart = document.getElementById("first-pie-chart")
 
 //const test = document.getElementsByClassName("inputcontainer")
-const submitButton = document.querySelector("#action-button")
+var submitButton = document.querySelector("#action-button")
 
 // Color dictionary
 const value2color = {'-3': 'rgb(172, 51, 51)',
