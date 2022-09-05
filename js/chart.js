@@ -247,6 +247,8 @@ function create_table(){
     tmp_cell_score.innerHTML = total_score_3.toString()+ "/" + (category3_values[0].length * 6).toString();
 }
 
+const submitButton = document.querySelector("#action-button")
+
 submitButton.addEventListener("click", create_charts);
 submitButton.addEventListener("click", create_recap);
 submitButton.addEventListener("click", create_table);
