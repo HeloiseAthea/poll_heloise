@@ -5,7 +5,7 @@ function create_poll1(category1){
         category1[i].insertAdjacentHTML("beforeend",
         `
                 <div style="width: 100%; height: 100%; box-sizing: border-box;" class="inputcontainer">
-                    <textarea style="width: 100%; height: 100%; box-sizing: border-box;" id='input-container-${id}' name="multiliner"></textarea>
+                    <textarea id='input-container-${id}' name="multiliner"></textarea>
                 </div>
                                         `);
     }
@@ -135,6 +135,7 @@ function add_category_2(){
 
                     <div class="inputcontainer">
                         <label> Comments </label>
+                        <br>
                         <br>
                         <textarea id='input-container-${id}' name="multiliner"></textarea>
                     </div>

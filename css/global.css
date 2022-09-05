@@ -1,14 +1,19 @@
+.section,
+article,
+section {
+    /*border-bottom: 1px solid hsla(0, 0%, 50%, 0.4);*/
+    max-width: 1500px;
+    margin-left:10px;
+    padding: 0 0 40px;
+    position: relative;
+}
+
 .model-selector {
-    display: flex;
-    flex-direction: column;
+    margin-right: 100px;
+    margin-top: 10px;
+    margin-left:10px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.6);
 }
-
-/*form {
- display: grid;
-
-}
-*/
-
 
 h3{
     text-align:center;
@@ -16,15 +21,114 @@ h3{
 
 h4{
     text-align: center;
+
 }
 
 h5{
     text-align: center;
 }
+*/
+
 
 label{
     display:block;
     text-align: center;
+}
+
+
+
+.banner {
+    padding: 10px;
+}
+
+
+.category1 {
+    margin-right:50px;
+    margin-left:15px;
+}
+
+#category2-container{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.poll2-container{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.category2 {
+
+    /*height:440px;*/
+    margin-right:10px;
+    margin-left:10px;
+    float: none;
+
+}
+
+.poll2{
+
+      margin:10px;
+      float: left;
+      width: 45%;
+      height: 100%;
+
+}
+
+.input-category{
+    margin: 0px 2px 0px 2px;
+    padding: 0px 1px 0px 1px;
+    border-width: 1px 2px 1px 2px;
+ }
+
+.subcategory2 {
+    display: inline-block;}
+
+#category3-container {
+    display:flex;
+    flex-direction:row;
+    /*background-color : purple*/
+}
+
+.category3 {
+
+    /*height:440px;*/
+    margin-right:10px;
+    margin-left:10px;
+    float: none;
+
+}
+
+
+
+#first-banner { grid-area: 1 / 1 / 2 / 13;}
+
+/*
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+*/
+
+
+hr { flex-basis: 100%; height: 0; margin: 0; border: 0; }
+
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px 10px;
+  box-sizing: border-box;
+
+  background-color: #f8f8f8;
+  resize: none;
 }
 
 .inputcontainer{
@@ -39,67 +143,40 @@ label{
     left: 50%;
 }
 
-.banner {
-    background-color : blue
+#action-button{
+    padding: 10px;
 }
 
-.category1 {
-    flex-grow: 1;
-    /*background-color : red;*/
-    align-items: stretch;
+.results-panel {
+    margin-right: 100px;
+    margin-top: 10px;
+    margin-left:10px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.6);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 7px;
+    grid-row-gap: 9px;
 }
 
-.category2 {
-    /*background-color : green;*/
+#written-recap{
+    grid-area: 1 / 1 / 1 / 1;
+
 }
 
-.poll2{
-      /*background-color : grey;*/
-      float: left;
-      width: 50%;
-      height: 100%;
+#result-table{
+
+    grid-area: 2 / 1 / 2/ 1;
+
 }
 
-.subcategory2 {
-    display: inline-block;}
+#pie-chart-1{
 
-.category3 {
-    /*background-color : purple*/
+    grid-area: 1 / 2 / 1 / 2;
 }
 
+#pie-chart-2{
 
-
-#first-banner { grid-area: 1 / 1 / 2 / 13;}
-
-.container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display:grid;
+    grid-area: 2 / 2 / 2 / 2;
 }
-
-#goal { grid-area: 2 / 1 / 6 / 4; }
-#scale-of-interest { grid-area: 2 / 4 / 6 / 7; }
-#type-of-model { grid-area: 2 / 7 / 6 / 10; }
-#lab-technic { grid-area: 2 / 10 / 6 / 13; }
-
-#second-banner { grid-area: 6 / 1 / 7 / 13; }
-
-#homology { grid-area: 7 / 1 / 11 / 5; }
-#face-validity { grid-area: 7 / 5 / 11 / 9; }
-#mechanisms { grid-area: 7 / 9 / 11 / 13; }
-#predictive-validity { grid-area: 11 / 1 / 15 / 5; }
-#pathogenic-validity { grid-area: 11 / 5 / 15 / 9; }
-#other-category { grid-area: 11 / 9 / 15 / 13;}
-
-#third-banner{ grid-area: 15 / 1 / 16 / 13; }
-
-#reproducibility { grid-area: 16 / 1 / 20 / 3; }
-#fiability { grid-area: 16 / 3 / 20 / 5; }
-#control { grid-area: 16 / 5 / 20 / 7; }
-#randomization { grid-area: 16 / 7 / 20 / 9; }
-#convergent-validity { grid-area: 16 / 9 / 20 / 11; }
-#blind-experiments { grid-area: 16 / 11 / 20 / 13; }
-#action-button { grid-area: 20 / 1 / 21 / 13;}
-
-hr { flex-basis: 100%; height: 0; margin: 0; border: 0; }
-
