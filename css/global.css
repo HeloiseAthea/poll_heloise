@@ -97,7 +97,6 @@ label{
 }
 
 .category3 {
-
     /*height:440px;*/
     margin-right:10px;
     margin-left:10px;
@@ -147,11 +146,14 @@ textarea {
     padding: 10px;
 }
 
-.results-panel {
+.results-panel{
     margin-right: 100px;
     margin-top: 10px;
     margin-left:10px;
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.6);
+}
+
+.recap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
