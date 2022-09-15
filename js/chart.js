@@ -247,8 +247,15 @@ function create_table(){
     tmp_cell_score.innerHTML = total_score_3.toString()+ "/" + (category3_values[0].length * 6).toString();
 }
 
+function add_send_form(){
+    result_panel = document.querySelector(".results-panel");
+    send_button = `<`
+    results_panel.insertAdjacentHTML("beforeend",)
+}
+
 submitButton = document.querySelector("#action-button")
 
 submitButton.addEventListener("click", create_charts);
 submitButton.addEventListener("click", create_recap);
 submitButton.addEventListener("click", create_table);
+submitButton.addEventListener("click", add_send_form);
