@@ -42,9 +42,6 @@ function create_charts(){
     colors_1.push(value2color[info_1[2][i].toString()]);
     }
 
-    console.log(info_1);
-    console.log(colors_1);
-
     var labels_2 = info_2[0];
     var values_2 = info_2[1];
 
@@ -134,7 +131,7 @@ function create_recap(){
         <p style="margin-left:10px;"> ${type_div.value} </p>
         <br>
 
-        <h4>Lab technique</h4>
+        <h4>Theoretical and practical background</h4>
         <p style="margin-left:10px;"> ${technique_div.value} </p>
     `
 
@@ -248,9 +245,23 @@ function create_table(){
 }
 
 function add_send_form(){
-    result_panel = document.querySelector(".results-panel");
-    send_button = `<`
-    results_panel.insertAdjacentHTML("beforeend",)
+    var results_panel = document.querySelector(".results-panel");
+    send_button = `<div style="vertical-align:middle" id="send-results">
+                        <input id="send-results-button" style="vertical-align:middle; text-align:center; width:100%; height:100%;" type="submit" value="Send results">
+                    </div>
+                    `
+    results_panel.insertAdjacentHTML("beforeend",send_button);
+}
+
+function on_click_send(){
+
+    window.open("http://google.com");
+}
+
+function configure_button(){
+    var button = document.querySelector("#send-results-button");
+    button.addEventListener("click", on_click_send);
+
 }
 
 submitButton = document.querySelector("#action-button")
@@ -259,3 +270,4 @@ submitButton.addEventListener("click", create_charts);
 submitButton.addEventListener("click", create_recap);
 submitButton.addEventListener("click", create_table);
 submitButton.addEventListener("click", add_send_form);
+submitButton.addEventListener("click", configure_button);
