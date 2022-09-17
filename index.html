@@ -9,33 +9,40 @@
 <body>
 
 <section>
-<h1> "Rate my model!" </h1>
+<h1> "Rate my model" </h1>
 
 
 
 <h2>A tool for scientists and philosophers to think about their animal models, and have conceptual keys to improve them</h2>
 
 <p>
-  Rate my model is a tool to obtain an overall quality score for your animal model.
-    <br> ==> The score of each criteria is assigned by yourself (range: -3 to 3)
-    <br> ==> The score of each criteria can be weighted by taking into account your own goals (range: 0 (non applicable) to 3)
-    <br> ==> You can add criteria to take into account the specificity of your model
-    <br> ==> Add comments to justify each attributed score and associated weight
-    <br>
-    <br> RESULTS: a synthetic document with your inputs, and two rating figures.
-    <p>
-    <br> <u> <b> 3 sections to complete: </u> </p> </b>
+  Rate my model is a tool to assess the overall plausibility of your animal model regarding your question/goal of research.
+        <br>
+    <br> <u> <b> The evaluation comprises 3 section to complete </u> </p> </b>
+    <ol>
+    <li> Qualify your model: describe your research context and your scientific question by typing short text </li>
+    <li> Plausibility of your model: rate your model and type comments
+    <br> Each category of this section are subdivised in two criteria to evaluate </li>
+    <li> Fiability of associated data: rate your experimental setup and type coments </li>
+    </ol>
+    <br> <b> Section (2) & (3):</b>
     <ul>
-    <li> Qualify your model: by typing short text </li>
-    <li> Plausibility of your model: by rating and typing comments </li>
-    <li> Fiability of associated data: by rating and typing coments </li>
+        <li> the score of each criteria is assigned by yourself (range: -3 to 3) </li>
+        <li> the score of each criteria can be <i>weighted</i> by yourself (range: 0 to 3). </li>
+    Type 0 when a criteria is non applicable to your model.
+    <br> 1: the importance of this criterion is low in assessing the validity of your model.
+    <br> 3: the criteria is a key aspect of your model.
+        <li> You can add other criteria of validity to take into account the specificity of your model. </li>
+        <li> Add comments to justify each attributed score and associated weight. </li>
     </ul>
-
-    <b> Please run the evaluation for one research question at a time. </b>
-    <b> One evaluation : one question of research, one biological scale. </b>
+    <br> <b> RESULTS </b>: a synthetic PDF document with your inputs, and two rating figures.
+    <p>
+    <b> Please run the evaluation for only one model and its associated research question at a time. </b>
+    <b> One evaluation : one question of research, one biological scale, one evaluator. </b>
     <br> If your model can be used to study several phenomena, please repeat the evaluation for each of the phenomena.</br>
-
 </p>
+
+    <p> <i> This tool is largely based on (Lemoine & Belzung, 2011), trying to extend it to basic research models. Quotations are extracted from this paper.</i> </p>
     </section>
 
 <div class="model-selector">
@@ -50,7 +57,7 @@
                 <h4> Goal </h4>
 
                 <p>
-                  Which research question do you want to investigate with your animal model? Be as precise and concise as possible (one or two sentences, choose the function of your model you want evaluate.)
+                  What research question will the animal model and associated experimental protocol answer? Be as precise and concise as possible (one or two sentences, choose one general function of your model you want to evaluate.)
                 </p>
 
             </div>
@@ -59,7 +66,7 @@
                 <h4> Scale of interest </h4>
 
                 <p>
-                  Which biological level do you want to investigate with your animal model? (ex : molecular, behavioral, cellular, organ...)
+                  For your specific research question, which biological level do you want to investigate with your animal model? (ex : molecular, behavioral, cellular, organ...)
 
                 </p>
 
@@ -69,7 +76,7 @@
                 <h4> Type of model </h4>
 
                 <p>
-                  Precise which type your model is from a genetical point of view: induce, transgenic, spontaneous, negative, orphan...
+                  Precise which type your model is (from a genetical point of view): induce, transgenic, spontaneous, negative, orphan... If non applicable, type "NA".
                 </p>
             </div>
 
@@ -79,7 +86,7 @@
                 <p>
                   Tell us more about:
                     <ul>
-                <li> Yourself: what is your role in the laboratory, and what is your background? </li>
+                <li> Yourself: what is your role in the laboratory, and what is your main area of expertise? </li>
                 <li> The experimental techniques that are used with your animal model: are they already known, well practiced and available in the laboratory? </li>
             </ul>
                 </p>
@@ -99,8 +106,10 @@
                 <h4> Homology </h4>
 
                 <p>
-                  Homology evaluates two things: the choice of the species and the choice of a particular strain. This choice will be evaluated according to the function and the type of model previously indicated.
-                    <br> <i> Example: for a biomedical research model aiming at testing a pharmaceutical molecule, a genetic proximity to humans and the selection of a genetic line presenting characteristics of the modeled disease could be favored. Conversely, this phylogenetic proximity and the characteristics of the lineage will not be of much interest for a basic research model (the attributed weight could be close to 0 in thise case). </i>
+                  "Homology criteria" aims to evaluate two things: the choice of the species and the choice of a particular strain. Your choices will be evaluated according to the function and the type of model previously indicated.
+                    <br>
+                    <br> <i> Example: for a biomedical research model aiming at testing a drug, a genetic proximity to humans and the selection of a genetic line presenting characteristics of the modeled disease could be favored (high score, hight weight).
+                    <br> Conversely, this phylogenetic proximity to humans and the characteristics of the lineage will not be of much interest for a basic research model (the attributed weight could be close to 0 in thise case). </i>
                 </p>
                 <div class="poll2-container">
                     <div class="poll2" id="genetic-distance">
@@ -119,10 +128,10 @@
                   "The face validity of an animal model is the similarity of what is observed in the animal model to what
                     is observed in the human modeled organism."
                      <ul>
-                <li> Ethological validity: "similarity of behaviors related to the presumed pathological organism. Meaning matters more than the material similarity." </li>
-                E.g. : "nest building activity of the rodent can be taken as an analogue of the daily activity of the human."
-                <li> Biomarker validity: "similarity of biological markers related to the presume organism. Function matters more than the chemical composition."</li>
-                E.g. : glucocorticods
+                <li> <b> Ethological validity:</b> "similarity of behaviors related to the presumed (...) organism. Meaning matters more than the material similarity." </li>
+                E.g.: "nest building activity of the rodent can be taken as an analogue of the daily activity of the human."
+                <li> <b> Biomarker validity:</b> "similarity of biological markers related to the presume organism. Function matters more than the chemical composition."</li>
+                E.g.: glucocorticods
                 </p>
 
                 <div class="poll2-container">
@@ -139,12 +148,15 @@
                 <h4> Mechanisms </h4>
 
                 <p>
-                  The mechanistic validity of an animal model assesses the similarity of the mechanism we suppose or know
-                    is working in the animal (phenomena of interest), to the mechanism that
-                    is or is presumed to be working in the human.
-                    It refers at the same time to the mechanism that we think is producing the behavior, the biological markers or the symptoms,
-                    and to the mechanism we think is sensitive to the action of effective therapeutic agents in case of a disease.
-                    This mechanism can be either cognitive or neurobiological."
+                  "The mechanistic validity of an animal model assesses the similarity of the mechanism we suppose or know
+                    is working in the animal, to the mechanism that is or is presumed to be working in the human.
+                    <br> It refers at the same time to:
+                <ul>
+                <li> the mechanism that we think is producing the behavior, </li>
+                <li> the biological markers or the symptoms,</li>
+                <li> and to the mechanism we think is sensitive to the action of effective therapeutic agents [in case of a disease].</li>
+                </ul>
+                This mechanism can be either <b> cognitive or neurobiological.</b>"
                 </p>
 
                 <div class="poll2-container">
@@ -163,11 +175,13 @@
                 <h4> Predictive validity [study of a disease] </h4>
 
                 <p>
-                  "The predictive validity of an animal model is the similarity of the relation between, on the one hand,
-                    the triggering factors and the occurrence of the disease and, on the other hand, between the therapeutic
-                    agent and the disease. Roughly speaking, it is the resemblance of the apparent impact of the etiological
-                    factors and of the treatment on the observable effects.
-                     <ul>
+                  "The predictive validity of an animal model is the similarity of the relation between,
+                    <ul>
+                <li> on the one hand, the triggering factors and the occurrence of the disease and, </li>
+                <li> on the other hand, between the therapeutic agent and the disease.
+                    </ul>
+                Roughly speaking, it is the resemblance of the apparent impact of the etiological factors and of the treatment on the observable effects.
+                <ul>
                 <li> <b> Induction validity: </b>  "the action of the etiological factors on the observable effects of the model disease
                     resemble its action on the observable effects of the human disease."
                     <br> "For example, if chronic stress triggers depression-related biomarkers both in humans andin animals,
@@ -176,6 +190,7 @@
                     its action on the observable effects in the human disease."
                     <br> "For example, if chronic antidepressants induce remission in humans,
                     they should elicit the same effects in the animal model to score high on remission validity." </li>
+                </ul>
                 </p>
 
                 <div class="poll2-container">
@@ -189,18 +204,24 @@
             </div>
 
             <div class="category2" id="pathogenic-validity">
-                <h4> Pathogenic validity </h4>
+                <h4> Pathogenic validity [study of a disease] </h4>
 
                 <p>
                     Pathogenic validity of a model assesses the similarity of the processes that lead to disease. We can contrast two kinds of pathognic validity:
                     <ul>
-                <li> <b> Ontopathogenic validity: </b> early environmental factors whose
-                    interaction with the initial organism produces a vulnerable organism
-                <br> E.g. : "maternal care deprivation is generally considered an early environmental factor rendering the subject vulnerable to depressive-like states in adulthood and, thus, has good ontopathogenic validity."
-                    "Etiological factors do not have to be materially similar (from a biochemical point of view), but rather semantically similar (what they mean to an organism)."</li>
-                <br> <li> <b> Triggering validity: </b> the similarity of triggering factors occurring during adulthood whose
-                    interactions with either a vulnerable or an initial organism produces a pathological organism."</li>
-                E.g : "a cat might elicit fear in rodents, while in humans a white bear might induce the same state. The two stimuli (cat and bear) are not materially identical, but have the same meaning (threat) in the rodents and the humans world."
+                <li> <b> Ontopathogenic validity: </b> "early environmental factors whose
+                    interaction with the initial organism produces a vulnerable organism"
+                <br> E.g.: "maternal care deprivation is generally considered an early environmental factor rendering
+                    the subject vulnerable to depressive-like states in adulthood and, thus, has good ontopathogenic validity."</li>
+                <br> <li> <b> Triggering validity: </b> "the similarity of triggering factors occurring during adulthood whose
+                    interactions with either a vulnerable or an initial organism produces a pathological organism."
+                <br> E.g : "a cat might elicit fear in rodents, while in humans a white bear might induce the same state.
+                The two stimuli (cat and bear) are not materially identical, but have the same meaning (threat) in the rodents
+                and the humans world."</li>
+            </ul>
+                "Etiological factors do not have to be materially similar (from a biochemical point of view), but rather
+                    semantically similar (what they mean to an organism)."
+
                 </p>
                 <div class="poll2-container">
                     <div class="poll2" id="early-environmental-factor">
@@ -246,10 +267,12 @@
 
                 <p>
                   The degree of consistency of a device, an evaluation method, or a test.
-                    <br> A distinction can be made between inter-experimenter reliability: two experimenters or measuring instruments obtain the same result on the same individual.
-                    <br> And inter-tester reliability: the same experimenter obtains the same result by making repeated observations on the same individual.
-                    <br> Evaluate what is the more relevant for your experiment.
-                    3 : all experimenters / all repeated observations on the same individual are the same.
+                    <br> A distinction can be made between inter-experimenter reliability: two experimenters or measuring
+                    instruments obtain the same result on the same individual.
+                    <br> And inter-tester reliability: the same experimenter obtains the same result by making repeated
+                    observations on the same individual.
+                    <br> Indicate and evaluate the more relevant for your experiment.
+                    3: all experimenters / all repeated observations on the same individual are the same.
                 </p>
             </div>
 
@@ -257,9 +280,9 @@
                 <h4> Controls </h4>
 
                 <p>
-                  Could you add controls to your experiment, or are they all included in the protocol?
-                    <br> -3 : 0 control.
-                    <br> 0: you could add more controls, but for some reasons (money, time, etc.), you can not / do not
+                  Could you add controls to your experiment?
+                    <br> -3: no control.
+                    <br> 0: you could add more controls, but for some reasons (money, time, etc.), you can not/do not
                     <br> 3: all the controls you thought of have been carried out.
                 </p>
 
@@ -279,8 +302,8 @@
                  Convergent validity aims to evaluate the extent to which the measurement of a particular process, trait
                     or state through a given experimental process correlates with another measurement of the same process,
                     trait or state from another experimental process. Convergent validity seems to be one of the possible
-                    ways of taking into account, at the theoretical level, Pierre-Luc Germain's remark concerning the absence
-                    of autonomy/self-sufficiency of experimental models.
+                    ways of taking into account Pierre-Luc Germain's remark concerning the absence
+                    of autonomy/self-sufficiency of experimental models (PLG, 2014) .
                 </p>
             </div>
 
@@ -288,7 +311,7 @@
                 <h4> Blind experiments </h4>
 
                 <p>
-                  Randomnly allocating experimentaters among compared conditions. Difficult to satisfy in real laboratory conditions.
+                  Randomnly allocating experimentaters among compared conditions. Note: difficult to satisfy in real laboratory conditions.
 
                 </p>
             </div>
